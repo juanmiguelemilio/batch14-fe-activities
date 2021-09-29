@@ -13,12 +13,17 @@ body {
 }
 
 .navbar {
+    padding-top: 1%;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 .container-fluid {
-    padding-top: 5%;
+    padding-top: 5%; 
+}
+
+.projects-section {
+    padding-bottom: 10%;
 }
 
 .navbar-brand {
@@ -31,10 +36,6 @@ h1 {
 
 p {
     color: white;
-}
-
-.footer {
-    padding-right: 10%;
 }
 
 main > .footer {

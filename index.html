@@ -20,9 +20,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <!-- Nav Bar -->
-  <section>
+  <section class="navbar-section" id="title">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="header">
         <a class="navbar-brand" href="#"><img src="img/afkz.png" alt="" width="20px" class="d-inline-block align-text-top"> MJ Aguirre</a>
@@ -30,7 +31,7 @@
          <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scrolll">
+           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
@@ -49,48 +50,69 @@
     </div>
   </section>
 
+  <!-- Home -->
   <section class="home-section" id="home">
-
-  </section>
-
-  <!-- Page Content -->
-
-  <section class="my-1">
     <div class="container-fluid">
       <video autoplay muted loop id="myVideo">
         <source src="media/LL3.mp4" type="video/mp4">
       </video>
     </div>
-
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-8 mx-auto">
           <h1>Hi, I'm MJ!</h1>
           <h2>A Web Developer</h2>
-          <h4>Projects</h4>
-          <ul>
-            <li>Project 1</li>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet venenatis mauris, ac elementum est. Phasellus interdum pharetra condimentum. Morbi aliquam sed tortor eu rutrum.</p>
-            <li>Project 2</li>
-              <p>Vivamus sit amet nisi turpis. Nulla facilisi. Vestibulum sit amet nibh nunc. Cras sagittis iaculis pellentesque.</p>
-            <li>Project 3</li>
-              <p>Curabitur at elementum nisl, eu suscipit nulla. Aenean pretium arcu at metus ornare ultricies. Ut tincidunt sit amet neque a tincidunt. Vivamus tincidunt, risus et euismod fermentum, diam massa gravida mauris, sed scelerisque sem mi sit amet sapien.</p>
-          </ul>
         </div>
     </div>
   </section>
-  <section>
-        <!-- Footer -->
-        <footer class="footer fixed-bottom text-right text-muted text-secondary" id="footer">
-          <div class="contaiter-fluid">
-            <p>MJ Aguirre</a> © Copyright</p>
-          </div>
-        </footer>
-  </section>  
 
-  <!-- <a href="https://github.com/mjaguirre-xx"> -->
+  <!-- About -->
+  <section class="about-section" id="about">
+    <div class="container-fluid">
+      <div class="col-md-8 mx-auto">
+        <h4>About</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet venenatis mauris, ac elementum est. Phasellus interdum pharetra condimentum. Morbi aliquam sed tortor eu rutrum.</p>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/main.js"></script>
+
+  <!-- Projects -->
+  <section class="projects-section" id="projects">
+    <div class="container-fluid">
+    <div class="col-md-8 mx-auto">
+      <h4>Projects</h4>
+      <ul>
+        <li>Project 1</li>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet venenatis mauris, ac elementum est. Phasellus interdum pharetra condimentum. Morbi aliquam sed tortor eu rutrum.</p>
+        <li>Project 2</li>
+          <p>Vivamus sit amet nisi turpis. Nulla facilisi. Vestibulum sit amet nibh nunc. Cras sagittis iaculis pellentesque.</p>
+        <li>Project 3</li>
+          <p>Curabitur at elementum nisl, eu suscipit nulla. Aenean pretium arcu at metus ornare ultricies. Ut tincidunt sit amet neque a tincidunt. Vivamus tincidunt, risus et euismod fermentum, diam massa gravida mauris, sed scelerisque sem mi sit amet sapien.</p>
+      </ul>
+    </div>
+    </div>
+  </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container-fluid">
+      <div class="col-md-8 mx-auto">
+        <h4>Contact</h4>
+        </ul>
+      </div>
+      </div>
+    </section>
+
+
+
+  <footer class="footer fixed-bottom text-center" id="footer">
+    <div class="contaiter-fluid">
+      <p>MJ Aguirre © Copyright</p>
+    </div>
+  </footer>
+
+
 </body>
 
 </html>
