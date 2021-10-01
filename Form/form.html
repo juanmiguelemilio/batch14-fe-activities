@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>BNM | Customer Satisfaction</title>
+</head>
+
+<body>
+    <div id="main" class="bnm-form">
+        <div id="survey-form">
+            <!-- Title -->
+            <div id="title">
+                <h1>Bank of New Maharlika Customer Satisfaction</h1>
+                <p id="description"><em>Our mission and vision is to serve you better.</em></p>
+                <p>Let us know on how we can improve our products and services by answering this short survey.</p>
+            </div>
+            <br>
+            <!-- Form -->
+            <form action="" method="post">
+                <!-- Full Name -->
+                <div id="name">
+                    <strong>Full name</strong> <br>
+                    <input 
+                        id="name-label"
+                        name="name"
+                        type="text" 
+                        placeholder="You may leave it blank" />
+                </div>
+                <br>
+                <!-- Email -->
+                <div id="email">
+                    <strong>Email</strong> <br>
+                    <input
+                        id="email-label"
+                        name="email"
+                        type="email"
+                        placeholder="You may leave it blank" />
+                </div>
+                <br>
+                <!-- Age -->
+                <div id="number">
+                    <strong>Age</strong> <br>
+                    <input
+                        id="number-label"
+                        name="age"
+                        type="number"
+                        min="16"
+                        max="100" 
+                        placeholder="16" 
+                        required />
+                </div>
+                <br>
+                <!-- Gender -->
+                <div id="dropdown">
+                    <strong>Gender</strong> <br>
+                    <select name="gender">
+                        <option selected="selected" value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="unknown">Prefer not to say</option>
+                    </select>
+                </div>
+                <br>
+                <!-- Products -->
+                <div id="products">
+                    <label for="availed-products"
+                    ><strong>What products or services you have with Bank of New Maharlika?</strong>
+                    </label>
+
+                    <fieldset id="availed-products">
+                    <legend>(<em>Check all that apply</em>)</legend>
+                    <label for="debit" >
+                        <input
+                        type="checkbox"
+                        name="product-checks"
+                        id="debit"
+                        value="debit"/>Debit
+                    </label>
+
+                    <label for="credit">
+                        <input
+                        type="checkbox"
+                        name="product-checks"
+                        id="credit"
+                        value="credit"/>Credit
+                    </label>
+
+                    <label for="loans">
+                        <input
+                        type="checkbox"
+                        name="product-checks"
+                        id="loans"
+                        value="loans"/>Loans
+                    </label>
+
+                    <label for="insurance">
+                        <input
+                        type="checkbox"
+                        name="product-checks"
+                        id="insurance"
+                        value="insurance"/>Insurance
+                    </label>
+
+                    <label for="investments">
+                        <input
+                        type="checkbox"
+                        name="product-checks"
+                        id="investments"
+                        value="investments"/>Investments
+                    </label>
+
+                    <label for="coin-x">
+                        <input
+                        type="checkbox"
+                        name="product-checks"
+                        id="coin-x"
+                        value="coin-x"/>coin-x
+                    </label>
+
+                    <label for="others">
+                        <input
+                        type="checkbox"
+                        name="product-checks"
+                        id="others"
+                        value="others"/>Others
+                    </label>
+        
+                    </fieldset>
+                </div>
+                <br>
+                <div>
+                    <!-- Ratings -->
+                    <h3>Overall experience with our service</h3>
+                    <table>
+                      <tr>
+                        <th class="first-col"></th>
+                        <th>Very Good</th>
+                        <th>Good</th>
+                        <th>Fair</th>
+                        <th>Poor</th>
+                        <th>Very Poor</th>
+                      </tr>
+                      <tr>
+                        <td class="first-col">How would you rate your overall experience with our service?</td>
+                        <td><input type="radio" value="none" name="rate" /></td>
+                        <td><input type="radio" value="none" name="rate" /></td>
+                        <td><input type="radio" value="none" name="rate" /></td>
+                        <td><input type="radio" value="none" name="rate" /></td>
+                        <td><input type="radio" value="none" name="rate" /></td>
+                      </tr>
+                      <tr>
+                        <td class="first-col">How satisfied are you with the comprehensiveness of our offer?</td>
+                        <td><input type="radio" value="none" name="satisfied" /></td>
+                        <td><input type="radio" value="none" name="satisfied" /></td>
+                        <td><input type="radio" value="none" name="satisfied" /></td>
+                        <td><input type="radio" value="none" name="satisfied" /></td>
+                        <td><input type="radio" value="none" name="satisfied" /></td>
+                      </tr>
+                      <tr>
+                        <td class="first-col">How would you rate our prices?</td>
+                        <td><input type="radio" value="none" name="prices" /></td>
+                        <td><input type="radio" value="none" name="prices" /></td>
+                        <td><input type="radio" value="none" name="prices" /></td>
+                        <td><input type="radio" value="none" name="prices" /></td>
+                        <td><input type="radio" value="none" name="prices" /></td>
+                      </tr>
+                      <tr>
+                        <td class="first-col">How satisfied are you with the timeliness of order delivery?</td>
+                        <td><input type="radio" value="none" name="timeliness" /></td>
+                        <td><input type="radio" value="none" name="timeliness" /></td>
+                        <td><input type="radio" value="none" name="timeliness" /></td>
+                        <td><input type="radio" value="none" name="timeliness" /></td>
+                        <td><input type="radio" value="none" name="timeliness" /></td>
+                      </tr>
+                      <tr>
+                        <td class="first-col">How satisfied are you with the customer support?</td>
+                        <td><input type="radio" value="none" name="name" /></td>
+                        <td><input type="radio" value="none" name="name" /></td>
+                        <td><input type="radio" value="none" name="name" /></td>
+                        <td><input type="radio" value="none" name="name" /></td>
+                        <td><input type="radio" value="none" name="name" /></td>
+                      </tr>
+                      <tr>
+                        <td class="first-col">Would you recommend our product / service to other people?</td>
+                        <td><input type="radio" value="none" name="recommend" /></td>
+                        <td><input type="radio" value="none" name="recommend" /></td>
+                        <td><input type="radio" value="none" name="recommend" /></td>
+                        <td><input type="radio" value="none" name="recommend" /></td>
+                        <td><input type="radio" value="none" name="recommend" /></td>
+                      </tr>
+                    </table>
+                </div>
+                <br>
+                <div>
+                    <!-- Comments -->
+                    <h4>What should we change in order to live up to your expectations?</h4>
+                    <textarea rows="5"></textarea>
+                    <br>
+                    <!-- Submit -->
+                    <div id="button">
+                      <button type="submit" id="submit">Submit</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
