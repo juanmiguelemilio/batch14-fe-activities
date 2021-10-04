@@ -38,6 +38,10 @@ p {
     color: white;
 }
 
+a {
+    padding: 0.4%;
+}
+
 main > .footer {
     padding: 60px 15px 0;
 }

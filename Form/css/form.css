@@ -3,7 +3,13 @@
 body {
     min-height: 100%;
     font-family: "Roboto";
+    background: url(./img/bnm.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
 
 #title {
     text-align: center;
@@ -21,6 +27,11 @@ div, form, p {
 
 h1 {
     font-weight: 600;
+    text-align: center;
+}
+
+#success-h1, #success-p {
+    text-align: center;
 }
 
 h4 {
@@ -44,7 +55,7 @@ form {
     
 input {
     width: 100%;
-    padding: 5px;
+    padding: 1px;
     border: 1px solid #ccc;
     border-radius: 3px;
     vertical-align: middle;
