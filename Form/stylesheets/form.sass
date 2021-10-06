@@ -1,49 +1,78 @@
-$font-stack: Roboto, san-serif
+@use "variables"
+@use "header"
+@use "buttons"
 
-body
-  min-height: 100%
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
-
+// ID
 #title
   text-align: center
+  padding-top: 30px
 
-div, form, p
-  padding: 0
-  margin: 0
-  outline: none
-  font-family: Roboto, Arial, sans-serif
-  font-size: 14px
-  color: black
-  line-height: 22px
+#side
+  display: flex
 
-h1
-  font-weight: 600
-  text-align: center
+#survey-form
+  padding: 20px
+  background: variables.$secondary-color
+  box-shadow: 0 2px 5px #ccc
 
-#success-h1, #success-p
-  text-align: center
+#side
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: variables.$primary-color
 
-h4
-  margin: 15px 0 4px
+// Class
+.first-col
+  width: 16%
+  text-align: left
 
 .bnm-form
   display: flex
   justify-content: center
   align-items: center
-  height: inherit
-  padding: 3px
+
+
+// Elements
+body
+  width: 100%
+  font-family: variables.$font-secondary
+  background: variables.$secondary-color
+
+nav
+  display: flex
+  justify-content: center
+  position: fixed
+  left: 0
+  top: 0
+  bottom: 0
+  height: 60px
+  width: 100%
+
+img 
+  width: 3rem
+  padding: 10px
+
+h1
+  font-family: variables.$font-primary
+  font-size: 2rem
+  color: $secondary-color
+  display: flex
+  justify-content: flex-start
+
+p
+  font-weight: 100
+
+label
+  font-weight: 100
+  width: 10%
 
 form
-  width: 100%
   padding: 20px
-  background: #fff
+  background: variables.$secondary-color
   box-shadow: 0 2px 5px #ccc
 
 input
-  width: 100%
+  width: 50%
   padding: 1px
   border: 1px solid #ccc
   border-radius: 3px
@@ -53,42 +82,19 @@ input
     outline: none
     border: 1px solid #095484
 
-textarea:hover
-  outline: none
-  border: 1px solid #095484
-
-th, td
+th
   width: 15%
   padding: 15px 0
   border-bottom: 1px solid #ccc
   text-align: center
   vertical-align: unset
   line-height: 18px
-  font-weight: 400
-  word-break: break-all
 
-.first-col
-  width: 16%
-  text-align: left
-
-table
-  width: 100%
+td
+  font-weight: 300
 
 textarea
-  width: calc(100% - 6px)
-
-button
-  width: 150px
-  padding: 10px
-  border: none
-  -webkit-border-radius: 5px
-  -moz-border-radius: 5px
-  border-radius: 5px
-  background-color: gray
-  font-size: 16px
-  color: #fff
-  cursor: pointer
-  margin-top: 5%
-
+  width: 100%
   &:hover
-    background-color: black
+    outline: none
+    border: 1px solid #095484
