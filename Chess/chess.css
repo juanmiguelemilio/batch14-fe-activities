@@ -5,6 +5,7 @@ body {
 }
 
 nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -12,18 +13,37 @@ nav {
 }
 
 h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 6vmin;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: "Cinzel Decorative";
+}
+
+.main {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 8vh;
 }
 
 .chessboard {
   width: 40vw;
   border: solid 3px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -31,9 +51,15 @@ h1 {
 }
 
 .board {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -58,13 +84,19 @@ h1 {
 }
 
 #pawn1 {
-  animation-name: pawn1;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
+  -webkit-animation-name: pawn1;
+          animation-name: pawn1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
-
 /*# sourceMappingURL=chess.css.map */
