@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/todo.css" type="text/css"/>
+    <link rel="stylesheet" href="css/quote.css" type="text/css">
+</head>
+<body onload="start()">
+    <!-- Time -->
+    <span id="time_span"></span>
+    <main>
+        
+
+        <!-- Input Name -->
+        <div class="container">
+            <div class="input-name">
+                <label id="savedName" class="savedName">What is Your Name?</label>
+                <label id="getName"></label>
+                <input type="text" id="name" class="nameInput"/>
+                <form name="nForm" id="nForm">
+                    <input type="text" name="mGoal" id="mGoal" class="goalInput" required/>
+                </form>
+                <span id="goal" class="goal" onclick="delGoal()"></span>
+            </div>
+        </div>
+
+        <!-- Goal -->
+        <div class="btnGoal">
+            <button onclick="saveGoal()" class="changeGoal">Set focus</button>
+        </div>
+
+        
+
+        <!-- Set Name -->
+        <div class="btnConts">
+            <button onclick="saveName()" class="changeBtn">Set Name</button>
+            <button onclick="logOut()" class="removeBtn">Logout</button>
+            <button onclick="changeName()" class="changeName">Change Name</button>
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="javascript:void(0)" class="btn-change-quote">&#8635;</a>
+                <div><input type="text" class="quote-description"></div>
+                <a href="javascript:void(0)" class="btn-add-quote">Add new</a>
+                <div class="quote-detail"><label class="quote"></label></div>
+            </div>
+        </div>
+
+      
+
+        <!-- To Do List -->
+        <div class="todo-app" id="todo-app">
+            <h3>Today</h3>
+            <span id="todo-inst">(click to mark as done, double click to delete)</span>
+            <div>
+                <input id="inputField" type="text"><button id="addToDo">+</button>
+            </div>
+            <div class="to-dos" id="toDoContainer">
+            </div>
+        </div>
+        <!-- <div>
+            <button onclick="show_hide()" id="show-hide-todo">To Do</button>
+        </div> -->
+        
+        <!-- To Do List -->
+        <div class="todoConts">
+            <div class="toDoCtr">
+                <button id="hidetoDo" onclick="closeToDo()">▼</button>
+                <input type="text" id="toDoField" class="inputVal" value="">
+                <button id="toDoBtn" class="tdBtn">+</button>
+            </div>
+            <div class="toDoLists">
+                <!-- newly created to do list -->
+            </div>
+            <div class="menuToDo">
+                <span class="toDoTxt" onclick="openToDo()">To Do</span>
+                <button class="clearTask" onclick="clearTask()"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+       
+        
+    </main>
+
+    <script src="js/todo.js"></script>
+    <script src="js/momentum.js"></script>
+    <script src="js/wallpaper.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/quote.js"></script>
+</body>
+</html>
