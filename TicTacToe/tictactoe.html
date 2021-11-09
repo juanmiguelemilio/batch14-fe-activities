@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/tictactoe.css">
+
+	
+	<title>Document</title>
+</head>
+<body>
+	<div class="navigation">
+        <button id="previousMove">&#8592;</button>
+        <button id="restart2">&#8635;</button>
+        <button id="nextMove" disabled>&#8594;</button>
+    </div>
+	<div class="board" id="board">
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+		<div class="cell" data-cell></div>
+	</div>
+	<div class="winning-message" id="winningMessage">
+		<div data-winning-message-text>X Wins!</div>
+		<button id="restartButton">Restart</button>
+		<button id="checkMoves">Check Moves</button>
+	</div>
+	<!-- JavaScript -->
+	<script src="js/tictactoe.js"></script>
+</body>
+</html>
