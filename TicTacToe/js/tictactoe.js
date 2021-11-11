@@ -37,6 +37,8 @@ let circleTurn
 startGame()
 
 restartButton.addEventListener('click', startGame)
+reset2.addEventListener('click', startGame)
+
 
 function startGame() {
     circleTurn = false
@@ -56,13 +58,18 @@ function handleClick(e) {
     placeMark(cell, currentClass)
     if (checkWin(currentClass)) {
         endGame(false)
+        updatedBoardStatus()
+        updateMoves()
     } else if (isDraw()) {
         endGame(true)
     } else {
+        updatedBoardStatus()
+        updateMoves()
         swapTurns()
         setBoardHoverClass()
     }  
 }
+
 
 function endGame(draw) {
     if (draw) {
@@ -106,7 +113,48 @@ function checkWin(currentClass) {
 }
 
 
-// History
+
+// Move History
+
+/* --ADD EVENTLISTENERS ON EVERY CELLS-- */
+for (cell of cellElements) {
+    cell.addEventListener("click", handleClick, { once: true });
+}
+  
+/* --UPDATE BOARDSTATUS-- */
+const updatedBoardStatus = () => {
+    let row1 = [];
+    let row2 = [];
+    let row3 = [];
+    let mark = "";
+  
+for (let i = 0; i < cellElements.length; i++) {
+    if (cellElements[i].classList.contains("x")) {
+        mark = "x";
+    } else if (cellElements[i].classList.contains("circle")) {
+        mark = "o";
+    } else {
+        mark = "";
+    }
+  
+    if (i <= 2) {
+        row1.push(mark);
+    } else if (i > 2 && i < 6) {
+        row2.push(mark);
+    } else {
+        row3.push(mark);
+    }
+}
+  
+    history.push([row1, row2, row3]);
+    console.log(history);
+};
+  
+/* --UPDATE NUMBER OF MOVE-- */
+const updateMoves = () => {
+    move = history.length - 1;
+    console.log(`number of move: ${move}`);
+};
 
 /* --CHECK MOVES BUTTON START-- */
 checkMoves.addEventListener("click", () => {

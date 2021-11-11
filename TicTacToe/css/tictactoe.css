@@ -129,7 +129,8 @@ body {
 }
 
 .winning-message button {
-    font-size: 3rem;
+    margin: 5px;
+    font-size: 2rem;
     background-color: white;
     border: 1px solid black;
     padding: .25em .5em;
@@ -148,4 +149,36 @@ body {
 
 .navigation.show {
     display: flex;
+}
+
+.navigation {
+    display: none;
+    width: 100vw;
+    position: absolute;
+    bottom: 150px;
+    justify-content: center;
+}
+
+.navigation button {
+    border: none;
+    font-size: 50px;
+    vertical-align: middle;
+    margin: 5px;
+    font-size: 2rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+.navigation button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+
+/* EDGES */
+#tictactoerules {
+    
 }
