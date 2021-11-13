@@ -4,5 +4,10 @@ function hideMenu(){
     if(menuOpen = true){
       document.querySelector('.toggler').checked = false;
     }
-    }
+  }
     window.addEventListener("scroll", hideMenu);
+
+
+
+
+// document.querySelector("p").style.backgroundColor = "red";

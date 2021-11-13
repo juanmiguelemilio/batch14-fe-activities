@@ -12,11 +12,46 @@
 	<title>Tic Tac Toe</title>
 </head>
 <body>
+	<!-- Rules -->
+	<header id="tictactoerules">
+		<h2>Rules</h2>
+		<ol>
+			<li>
+				The game is played on a grid that's 3 by 3 squares.
+			</li>
+			<li>
+				You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
+			</li>
+			<li>
+				The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
+			</li>
+			<li>
+				When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a draw.
+			</li>
+		</ol>
+	</header>
+
+	<span id="black"> </span>
+
+	<!-- Title -->
+	<div id="title">
+		<span>TIC</span>
+		<span>TAC</span>
+		<span>TOE</span>
+	</div>
+
+	<!-- Buttons on check moves -->
 	<div class="navigation">
         <button id="previousMove">&#8592;</button>
         <button id="restart2">&#8635;</button>
         <button id="nextMove" disabled>&#8594;</button>
     </div>
+
+	<div id="surrender">
+		<button id="reset3">Surrender?</button>
+	</div>
+
+	<!-- Board -->
 	<div class="board" id="board">
 		<div class="cell" data-cell></div>
 		<div class="cell" data-cell></div>
@@ -28,33 +63,26 @@
 		<div class="cell" data-cell></div>
 		<div class="cell" data-cell></div>
 	</div>
+
+	<!-- Winning banner -->
 	<div class="winning-message" id="winningMessage">
 		<div data-winning-message-text>X Wins!</div>
 		<button id="restartButton">Restart</button>
 		<button id="checkMoves">Check Moves</button>
 	</div>
 
-	<div id="tictactoerules">
-		<h1>RULES FOR TIC TAC TOE</h1>
-		<ul>
-			<li>
-				1. The game is played on a grid that's 3 squares by 3 squares.
-			</li>
-			<li>
-				2. You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.
-			</li>
-			<li>
-				3. The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.
-			</li>
-			<li>
-				4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
-			</li>
-		</ul>
+	<!-- Footer -->
+	<div id="footer">
+		<div>
+			MJ Aguirre
+		</div>
 	</div>
 
-	
+	<div id="xoxo">
+		<div class="xoxo">XOXO</div>
+	</div>
+
 	<!-- JavaScript -->
 	<script src="js/tictactoe.js"></script>
-	<script src="js/movehistory.js"></script>
 </body>
 </html>

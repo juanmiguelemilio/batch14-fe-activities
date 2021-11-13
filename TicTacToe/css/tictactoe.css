@@ -180,5 +180,105 @@ body {
 
 /* EDGES */
 #tictactoerules {
-    
+    color: black;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    width: 25%;
+}
+
+li {
+    font-weight: 100;
+}
+
+#title {
+    position: absolute;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    right: 25px;
+    top: 25px;
+}
+
+span {
+    font-size: 100px;
+}
+
+#xoxo {
+    color: black;
+    font-family: 'Montserrat';
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    font-weight: 500;
+}
+
+#footer {
+    color: gray;
+    font-family: 'Montserrat';
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    font-weight: 500;
+}
+
+#black {
+    width: 10px;
+    height: 130px;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+ol {
+    margin: 0 0 1.5em;
+    padding: 0;
+    counter-reset: item;
+}
+  
+ol > li {
+    margin: 0;
+    padding: 0 0 0 2em;
+    text-indent: -2em;
+    list-style-type: none;
+    counter-increment: item;
+}
+  
+ol > li:before {
+    display: inline-block;
+    width: 1em;
+    padding-right: 0.5em;
+    font-weight: bold;
+    text-align: right;
+    content: counter(item) ".";
+}
+
+#surrender {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    bottom: 25px;
+    justify-content: center;
+}
+
+#surrender button {
+    border: none;
+    font-size: 50px;
+    vertical-align: middle;
+    margin: 5px;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+#surrender button:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.surrender.hide {
+    display: none;
 }
