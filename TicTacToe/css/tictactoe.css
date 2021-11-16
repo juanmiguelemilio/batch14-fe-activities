@@ -10,6 +10,8 @@
 body {
     margin: 0;
     font-family: 'Roboto';
+    /* background-image: url(/TicTacToe/img/bg1.jpg); */
+    /* background-size: 130%; */
 }
 
 .board {
@@ -183,12 +185,18 @@ body {
     color: black;
     position: absolute;
     top: 150px;
-    left: 25px;
+    left: 5%;
     width: 25%;
+    
 }
+
+li:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 li {
     font-weight: 100;
+    transition: transform .2s;
 }
 
 #title {
@@ -197,6 +205,18 @@ li {
     font-weight: 800;
     right: 25px;
     top: 25px;
+    height: 80%;
+    animation: scrollText 30s infinite linear;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+span:hover {
+    -webkit-text-stroke: 5px black;
+    color: transparent;
 }
 
 span {
@@ -222,12 +242,18 @@ span {
 }
 
 #black {
-    width: 10px;
+    width: 130px;
     height: 130px;
     background-color: black;
     position: absolute;
     top: 25px;
-    left: 25px;
+    left: -25px;
+    animation: shapeExtend 30s infinite linear;
+}
+
+#black:hover {
+    width: 100vw;
+    background-color: rgba(133, 133, 133, 0.2);
 }
 
 ol {
@@ -238,7 +264,7 @@ ol {
   
 ol > li {
     margin: 0;
-    padding: 0 0 0 2em;
+    padding: 0 0 20px 2em;
     text-indent: -2em;
     list-style-type: none;
     counter-increment: item;
@@ -281,4 +307,15 @@ ol > li:before {
 
 .surrender.hide {
     display: none;
+}
+
+/* Keyframes */
+@keyframes scrollText {
+    from   { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes shapeExtend {
+    from {transform: scaleX()}
+    to {transform: scaleX(2)}
 }
