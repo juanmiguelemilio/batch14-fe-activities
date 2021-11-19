@@ -206,7 +206,7 @@ li {
     right: 25px;
     top: 25px;
     height: 80%;
-    animation: scrollText 30s infinite linear;
+    animation: scrollText 120s infinite linear;
 }
 
 a {
@@ -312,7 +312,7 @@ ol > li:before {
 /* Keyframes */
 @keyframes scrollText {
     from   { transform: translateX(0%); }
-    to { transform: translateX(-50%); }
+    to { transform: translateX(-150%); }
 }
 
 @keyframes shapeExtend {

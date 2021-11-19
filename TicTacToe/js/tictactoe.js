@@ -154,7 +154,7 @@ for (let i = 0; i < cellElements.length; i++) {
 }
   
     history.push([row1, row2, row3]);
-    console.table([history]);
+    console.log([history]);
 };
 
 // Number of moves
